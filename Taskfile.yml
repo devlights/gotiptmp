@@ -11,6 +11,12 @@ tasks:
     cmds:
       - gotip mod init app
       - touch main.go
+  fmt:
+    cmds:
+      - gotip fmt .
+  vet:
+    cmds:
+      - gotip vet .
   run:
     cmds:
       - gotip run .
