@@ -1,0 +1,21 @@
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - gotip version
+      - task --version
+  init:
+    cmds:
+      - gotip mod init app
+      - touch main.go
+  run:
+    cmds:
+      - gotip run .
+  clean:
+    cmds:
+      - rm -f ./*.go
+      - rm -f ./*.mod
+      - rm -f ./*.sum
