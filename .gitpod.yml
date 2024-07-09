@@ -1,2 +1,7 @@
 image:
   file: .gitpod.Dockerfile
+
+tasks:
+  - name: gotip download
+    command:
+      gotip download

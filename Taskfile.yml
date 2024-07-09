@@ -18,8 +18,15 @@ tasks:
     cmds:
       - gotip vet .
   run:
+    deps: [ fmt, vet ]
     cmds:
       - gotip run .
+  doc:
+    cmds:
+      - gotip doc {{.CLI_ARGS}}
+  version:
+    cmds:
+      - gotip version
   clean:
     cmds:
       - rm -f ./*.go
